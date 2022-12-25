@@ -1,0 +1,35 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main(){
+
+    int year;
+    cout<<"mention the year: ";
+    cin>>year;
+    // checking if it is a 00 year then the following conditions apply
+    if (year%100==0)
+    {
+        if (year%400==0)
+        {
+            cout<<"it is a leap year";
+        }
+        else{
+            cout<<"it is not a leap year";
+        }
+        
+    }
+    else if (year%4==0)
+    {
+        cout<<"it is a leap year";
+    }
+    else
+    {
+        cout<<"it is not a leap year";
+    }
+    
+    
+    
+    
+    return 0;
+}
